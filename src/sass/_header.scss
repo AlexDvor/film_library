@@ -1,5 +1,38 @@
+.nav-menu {
+  padding-top: 58px;
+  padding-bottom: 97px;
+}
+
+.nav-menu__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu__list {
+  display: flex;
+  margin-bottom: 41px;
+}
+
 .nav-menu__link {
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  //   color: var(--primary-font-color);
+  color: black;
+}
+
+.nav-menu__item:first-child {
+  margin-right: 39px;
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-form__input {
+  width: 100%;
 }
 
 // <!--

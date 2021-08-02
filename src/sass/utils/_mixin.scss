@@ -21,25 +21,11 @@
 // }
 
 // @mixin font($weight, $size, $lh, $ls, $color) {
-//   @if $weight {
-//     font-weight: $weight;
-//   }
-
-//   @if $size {
-//     font-size: $size;
-//   }
-
-//   @if $lh {
-//     line-height: $lh;
-//   }
-
-//   @if $ls {
-//     letter-spacing: $ls;
-//   }
-
-//   @if $color {
-//     color: $color;
-//   }
+//   font-weight: $weight;
+//   font-size: $size;
+//   line-height: $lh;
+//   letter-spacing: $ls;
+//   color: $color;
 // }
 
 @mixin for-phone-up {
