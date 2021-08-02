@@ -75,10 +75,6 @@
   align-items: center;
   display: flex;
   color: var(--primary-font-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 1.16;
 }
 
 .nav-menu__logo-svg {
@@ -87,9 +83,14 @@
 
 .nav-menu__logo-name {
   opacity: 0;
+  font-size: 10px;
 
   @include for-tablet-up {
     opacity: 1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.16;
   }
 }
 
