@@ -1,1 +1,0 @@
-{"version":3,"sources":["sass/utils/_container.scss"],"names":[],"mappings":"AAAA,WACE,cAAA,CACA","file":"src.be019fd1.css","sourceRoot":"../src","sourcesContent":[".container {\n  padding: 0px 15px;\n  margin: 0 auto;\n}\n"]}
