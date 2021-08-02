@@ -1,3 +1,27 @@
+.header-background-img {
+  max-width: 767px;
+  height: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+
+  background-image: linear-gradient(
+      to right,
+      var(--background-color-hero),
+      var(--background-color-hero)
+    ),
+    url(../images/header/mobile/background-mob@2x.jpg);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        var(--background-color-hero),
+        var(--background-color-hero)
+      ),
+      url(../images/header/mobile/background-mob@3x.jpg);
+  }
+}
+
 .nav-menu {
   padding-top: 58px;
   padding-bottom: 97px;
@@ -19,8 +43,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
-  //   color: var(--primary-font-color);
-  color: black;
+  color: var(--primary-font-color);
 }
 
 .nav-menu__item:first-child {
