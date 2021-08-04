@@ -59,3 +59,22 @@
     }
   }
 }
+
+.header-menu-btn {
+  display: flex;
+  justify-content: center;
+}
+.header-menu-btn__item {
+  width: 129.53px;
+  height: 44px;
+  background-color: var(--background-color-btn);
+  border: none;
+  border-radius: 5px;
+
+  text-transform: uppercase;
+  color: var(--primary-font-color);
+
+  &:first-child {
+    margin-right: 19.62px;
+  }
+}
