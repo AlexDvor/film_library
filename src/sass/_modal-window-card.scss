@@ -3,6 +3,7 @@
     display: flex;
   }
 }
+
 .movie-cards__img {
   display: block;
   width: 240px;
@@ -44,7 +45,7 @@
   margin-top: 20px;
 }
 
-.movie-cards__informacion {
+.movie-cards__information {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 500;
@@ -53,7 +54,7 @@
   color: var(--cards-description-font-color);
 }
 
-.movie-cards__informacion__item {
+.movie-cards__information__item {
   &:not(:last-child) {
     margin-bottom: 10px;
   }

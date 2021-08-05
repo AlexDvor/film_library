@@ -64,6 +64,7 @@
   display: flex;
   justify-content: center;
 }
+
 .header-menu-btn__item {
   width: 129.53px;
   height: 44px;
@@ -77,5 +78,11 @@
 
   &:first-child {
     margin-right: 19.62px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-background-btn-color);
+    border: none;
   }
 }
