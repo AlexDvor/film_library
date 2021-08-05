@@ -46,8 +46,8 @@
   }
 }
 
-// @mixin transition($element: color, $time: 250ms, $type: cubic-bezier(0.4, 0, 0.2, 1)) {
-//   transition-property: $element;
-//   transition-duration: $time;
-//   transition-timing-function: $type;
-// }
+@mixin transition($element: color, $time: 250ms, $type: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition-property: $element;
+  transition-duration: $time;
+  transition-timing-function: $type;
+}

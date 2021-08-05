@@ -145,9 +145,6 @@
   position: absolute;
   top: 0;
   right: 0;
-
-  @include for-tablet-up {
-  }
 }
 
 .message-failure {

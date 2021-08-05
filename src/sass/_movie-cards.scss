@@ -1,0 +1,131 @@
+// .movie-cards__wrapper {
+//   width: 240px;
+//   height: auto;
+//   object-fit: cover;
+// }
+
+.movie-cards {
+  @include for-tablet-up {
+    display: flex;
+  }
+}
+.movie-cards__img {
+  display: block;
+  // width: 100%;
+  // height: 100%;
+  width: 240px;
+  height: 356.57px;
+  @include for-tablet-up {
+    width: 264px;
+    height: 373.55px;
+  }
+}
+
+.movie-cards__description {
+  @include for-tablet-up {
+    margin-left: 32px;
+  }
+}
+
+.movie-cards__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--cards-name-font-color);
+
+  margin-top: 30px;
+
+  @include for-tablet-up {
+    margin-top: 0px;
+  }
+}
+
+.movie-cards__box {
+  display: flex;
+  margin-top: 20px;
+}
+
+.movie-cards__informacion {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--cards-description-font-color);
+}
+
+.movie-cards__informacion__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.movie-cards__value {
+  margin-left: 39px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--cards-name-font-color);
+}
+
+.movie-cards__value__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.movie-cards__about {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--cards-name-font-color);
+  margin-top: 20px;
+}
+
+.movie-cards__info {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.66;
+  color: var(--cards-name-font-color);
+  margin-top: 10px;
+}
+
+.movie-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 21px;
+}
+
+.movie-button-wrapper__item {
+  width: 112.58px;
+  height: 44px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #000000;
+  text-transform: uppercase;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+
+  &:first-child {
+    margin-right: 14.85px;
+  }
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-background-btn-color);
+    color: var(--primary-font-color);
+  }
+
+  @include for-tablet-up {
+    width: 125px;
+  }
+}
