@@ -32,6 +32,14 @@
   width: 274px;
   height: 398px;
   object-fit: cover;
+
+  @include for-tablet-up {
+    width: 294px;
+  }
+
+  @include for-desktop-up {
+    width: 274px;
+  }
 }
 
 .cards-list__img {
