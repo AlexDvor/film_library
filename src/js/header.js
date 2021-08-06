@@ -1,11 +1,9 @@
-import HeaderLibTpl from '../templates/header-lib.hbs';
-import HeaderHomeTpl from '../templates/header-home.hbs';
 
-
-
-const linkMyLibraryRef =   document.querySelector('.js-link-library')
-const linkMyHomeRef =  document.querySelector('.js-link-home')
-const headerSectionRef = document.querySelector('header')
+const linkMyLibraryRef = document.querySelector('.js-link-library')
+const linkMyHomeRef = document.querySelector('.js-link-home')
+const headerBackroundImage = document.querySelector('.header-background-img')
+const searchFormRef = document.querySelector('.search-form')
+const headerButtons = document.querySelector('.header-menu-btn');
 
 
 linkMyLibraryRef.addEventListener('click', onClickLib)
@@ -14,21 +12,17 @@ linkMyHomeRef.addEventListener('click', onClickHome)
 
 
 function onClickLib() {
-  
-    const headerLib = HeaderLibTpl()
-    // headerSectionRef.innerHTML = ''
-    headerSectionRef.innerHTML = headerLib;
-    console.log(headerSectionRef)
-    console.log('home')
-   
-  
+
+    searchFormRef.classList.add('is-closed');
+    headerButtons.classList.replace('is-closed', 'is-open');
+    headerBackroundImage.classList.replace('header-background-img', 'header-background-img-lib');
    
 }
 
 function onClickHome() {
-    //   const headerHome = HeaderHomeTpl()
-    //   headerSectionRef.innerHTML = headerHome;
-    console.log("lib")
+    searchFormRef.classList.remove('is-closed');
+     headerButtons.classList.replace('is-open', 'is-closed');
+     headerBackroundImage.classList.replace('header-background-img-lib', 'header-background-img')
 
 }
 
