@@ -12,7 +12,6 @@ linkMyHomeRef.addEventListener('click', onClickHome)
 
 
 function onClickLib() {
-
     searchFormRef.classList.add('is-closed');
     headerButtons.classList.replace('is-closed', 'is-open');
     headerBackroundImage.classList.replace('header-background-img', 'header-background-img-lib');
