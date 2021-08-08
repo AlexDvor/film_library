@@ -4,9 +4,9 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{}],"WcsN":[function(require,module,exports) {
 (()=>{const e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
-},{}],"cGsR":[function(require,module,exports) {
-const e=document.querySelector(".js-link-library"),c=document.querySelector(".js-link-home"),s=document.querySelector(".header-background-img"),r=document.querySelector(".search-form"),i=document.querySelector(".header-menu-btn");function o(){r.classList.add("is-closed"),i.classList.replace("is-closed","is-open"),s.classList.replace("header-background-img","header-background-img-lib")}function a(){r.classList.remove("is-closed"),i.classList.replace("is-open","is-closed"),s.classList.replace("header-background-img-lib","header-background-img")}e.addEventListener("click",o),c.addEventListener("click",a);
+},{}],"CvMR":[function(require,module,exports) {
+const e=document.querySelector(".js-link-library"),s=document.querySelector(".js-link-home"),c=document.querySelector(".header-background-img"),r=document.querySelector(".search-form"),n=document.querySelector(".header-menu-btn");function a(){r.classList.add("is-closed"),n.classList.replace("is-closed","is-open"),c.classList.replace("header-background-img","header-background-img-lib"),s.classList.remove("nav-menu__link--current-page"),e.classList.add("nav-menu__link--current-page")}function i(){r.classList.remove("is-closed"),n.classList.replace("is-open","is-closed"),c.classList.replace("header-background-img-lib","header-background-img"),e.classList.remove("nav-menu__link--current-page"),s.classList.add("nav-menu__link--current-page")}e.addEventListener("click",a),s.addEventListener("click",i);
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("../node_modules/modern-normalize/modern-normalize.css"),require("./js/modal-window"),require("./js/header");
-},{"./sass/main.scss":"clu1","../node_modules/modern-normalize/modern-normalize.css":"Y5dV","./js/modal-window":"WcsN","./js/header":"cGsR"}]},{},["Focm"], null)
-//# sourceMappingURL=/film_library/src.1a2b9e00.js.map
+"use strict";require("./sass/main.scss"),require("../node_modules/modern-normalize/modern-normalize.css"),require("./js/modal-window"),require("./js/changes-header");
+},{"./sass/main.scss":"clu1","../node_modules/modern-normalize/modern-normalize.css":"Y5dV","./js/modal-window":"WcsN","./js/changes-header":"CvMR"}]},{},["Focm"], null)
+//# sourceMappingURL=/film_library/src.0a359fd0.js.map
