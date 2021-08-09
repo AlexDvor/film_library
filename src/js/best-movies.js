@@ -12,21 +12,13 @@ function getMovieCards(res) {
     const result = movieCardTmp(response);
     console.log(response)
     refs.movieCardsList.insertAdjacentHTML('beforeend', result);
-    response.map(item=>getMovieData(item))
-    
-
+    response.map(item=>getShortsDate(item))
 }
 
 
-function getMovieData(obj) {
+function getShortsDate(obj) {
     const yearRef = document.querySelector(`[data-year-id="${obj.id}"]`);
-    const yearVal = yearRef.textContent;
-    // const a = obj.map(item => item.release_date).map(data => data.slice(0, 4))
-   yearRef.textContent = `| ${yearVal.slice(0, 4)}`;
-    
-
+    const yearValue = yearRef.textContent;
+    yearRef.textContent = `| ${yearValue.slice(0, 4)}`;
 }
 
-// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
-// const a = clients.slice(0,3).join(", ")
-// console.log(a)
