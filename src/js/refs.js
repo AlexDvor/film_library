@@ -6,5 +6,6 @@ export default {
     headerBackgroundImage: document.querySelector('.header-background-img'),
     searchForm: document.querySelector('.search-form'),
     headerButtons: document.querySelector('.header-menu-btn'),
+    movieCardsList:document.querySelector('.cards-list'),
 // 
 }

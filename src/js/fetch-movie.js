@@ -10,8 +10,12 @@ export default class FetchApi {
     
     }
 
-   async fetchTrendingMovie() {
-        return await axios.get(`trending/movie/day?api_key=${this.api_key}`)
+   async fetchTrendingMovie(period) {
+       return await axios.get(`trending/movie/${period}?api_key=${this.api_key}`);
     }
+
+    async fetchMovieByName() {
+    return await axios.get(`trending/movie/${period}?api_key=${this.api_key}`);
+}
 
 }
