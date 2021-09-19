@@ -1,3 +1,4 @@
+@import './loaders';
 @import './utils/common';
 @import './utils/variables';
 @import './utils/mixin';
@@ -6,6 +7,13 @@
 @import './header';
 @import './cards';
 @import './footer';
-@import './modal-window-card';
-@import './menu-buttons';
-@import './backdrop';
+@import './modal';
+@import './modal-content';
+@import './teamModal';
+// @import './modal-window-card';
+// @import './backdrop';
+@import './period-buttons';
+@import './scroll';
+@import './library.scss';
+@import './background-content-image.scss';
+@import './pagination.scss';

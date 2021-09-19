@@ -1,0 +1,135 @@
+.lightbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--time) var(--time-function);
+}
+
+.lightbox.is-open {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.lightbox__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color-backdrop);
+}
+
+.lightbox__content {
+  background-color: var(--background-color-modal);
+  border-radius: 5px;
+  padding: 48px 20px 41px 20px;
+  width: 280px;
+  // width: 90vw;
+  height: 90vh;
+  // height: 958px;
+  overflow-y: auto;
+  position: relative;
+
+  @include for-tablet-up {
+    background: linear-gradient(to right, var(--background-color-modal) 42%, transparent 100%);
+    background-color: transparent;
+    position: absolute;
+    width: 618px;
+    max-height: 605px;
+    padding: 42px 29px 40px 28px;
+  }
+
+  @include for-desktop-up {
+    width: 882px;
+    height: 568px;
+    padding: 50px 30px 40.2px 30px;
+  }
+}
+
+.lightbox__button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  transition: transform var(--time) var(--time-function), fill var(--time) var(--time-function);
+  fill: var(--close-color-icon);
+}
+
+.lightbox__button:hover,
+.lightbox__button:focus {
+  transform: scale(1.2);
+  fill: var(--accent-close-icon);
+}
+
+// ==============MODAL FOR TRAILER===============
+
+.backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--time) var(--time-function);
+}
+.backdrop.backdrop-is-open {
+  opacity: 1;
+  pointer-events: initial;
+}
+.backdrop_overlay {
+  position: fixed;
+  min-width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color-backdrop);
+}
+
+.blur_back {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  right: 0;
+  background-size: cover;
+  border-radius: 11px;
+
+  width: 95%;
+  background-position: -100% 10% !important;
+}
+
+.blur_back__wrapper {
+  width: 882px;
+  height: 568px;
+}
+
+.blur_back__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tomb_back {
+  background: url('https://fsmedia.imgix.net/cd/c9/5e/ba/4817/4d9a/93f0/c776ec32ecbc/lara-crofts-neck-looks-unnatural-in-the-new-poster-for-tomb-raider.png');
+}
